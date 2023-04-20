@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Deleting Data</title>
+</head>
+<body>
+    {% for value in out %}
+    {{value|safe}}
+    {% endfor %}
+
+
+    <form method="post" , action="http://127.0.0.1:5000/add_details">
+        <h3>Do you want to delete the above entry?</h3><input type="submit" onclick="return confirm('Are you sure?')" />
+    </form>
+
+</body>
+</html>

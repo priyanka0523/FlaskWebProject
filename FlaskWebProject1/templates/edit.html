@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Update Details</title>
+</head>
+<body>
+    {% for value in out %}
+    {{value|safe}}
+    {% endfor %}
+
+    <form method="post" , action="http://127.0.0.1:5000/add_details">
+        <input type="number" placeholder="Rank" name="rank" value={{ran}} readonly />
+        <input type="text" placeholder="Model" name="model" value={{mod}} />
+        <input type="text" placeholder="Specs" name="specs" value={{spe}} />
+        <input type="text" placeholder="Price" name="price" value={{pri}} />
+        <input type="text" placeholder="Rating" name="rating" value={{rat}} />
+        <input type="text" placeholder="Votes" name="votes" value={{vot}} />
+        <button class="button"><span>Hover </span></button>
+    </form>
+
+</body>
+</html>

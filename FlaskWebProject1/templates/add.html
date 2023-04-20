@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Add Details</title>
+</head>
+<body>
+    <form method="post" , action="http://127.0.0.1:5000/add_details">
+        <p>Rank Model </p>
+        
+        
+        <p></p><input type="number" placeholder="Rank" name="rank" value={{last+1}} readonly />
+        <input type="text" placeholder="Model" name="model" />
+        <input type="text" placeholder="Specs" name="specs" />
+        <input type="text" placeholder="Price" name="price" />
+        <input type="text" placeholder="Rating" name="rating" />
+        <input type="text" placeholder="Votes" name="votes" />
+        <button class="button"><span>Add </span></button>
+    </form>
+</body>
+</html>
